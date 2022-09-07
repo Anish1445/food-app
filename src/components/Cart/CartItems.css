@@ -13,3 +13,30 @@
     float: right;
     /* margin: 10px; */
 }
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    margin: 1rem 0rem;
+    border-radius: 12px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* width: 45%; */
+    text-align: center;
+}
+hr {
+    background-color: #e41515;
+}
+
+button{
+    background-color: #D82E2F;
+    color: white;
+    /* width: 40px; */
+    /* height: 25px; */
+    border-radius: 20px;
+    font-size: large;
+    padding:5px 20px;
+}

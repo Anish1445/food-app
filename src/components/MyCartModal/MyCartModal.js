@@ -31,12 +31,10 @@ export default function MyCartModal({open, children, onClose}) {
 
     return ReactDom.createPortal(
         <>
-            <div style={OVERLAY_STYLES} />
-
-           
-            <div style={MODAL_STYLES}>
+            <div className='section1' style={OVERLAY_STYLES} />
+            <div className='section2' style={MODAL_STYLES}>
                 {children}
-                {/* Your Items are here! */}
+
                 <button onClick={onClose} className="button-close"> Close </button>
             </div>
 

@@ -8,10 +8,6 @@ function FoodItem(props) {
 
   const [foodQuantity, setFoodQuantity] = useState(product.quantity);
 
-//   const handleAddToCart = (product) => {
-    
-//   }
-
   const handleQuantityClick = (event) => {
     console.log("Here--> ", data);
     setFoodQuantity(event.target.value);
@@ -22,16 +18,15 @@ function FoodItem(props) {
     <Card>
       <div className="food-details">
         <div className="food-title">
-          {/* <h5>{props.food_title}</h5> */}
           <h5>{product.food_title}</h5>
         </div>
+
         <div className="food-desc">
-          {/* <h5>{props.food_description}</h5> */}
           <h5>{product.food_description}</h5>
         </div>
+
         <div className="food-amount">
-          {/* <h3>${props.food_price}</h3> */}
-          <h3>${product.price}</h3>
+          <h3>&#8377;{product.price}</h3>
         </div>
       </div>
       <div className="food-right">
@@ -47,25 +42,12 @@ function FoodItem(props) {
               value={foodQuantity}
               onChange={handleQuantityClick}
             />
-            {/* <select value={foodQuantity} onChange={handleQuantityClick}>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-            </select> */}
+           
           </div>
         </div>
         <div className="food-right-bottom">
           <div>
-            <button
-              onClick={() => {
-                onAdd(product);
-                // handleAddToCart(product);
-                console.log("Food Details -->>", product);
-              }}
-              className="food-add-button"
-            >
+            <button onClick={() => {onAdd(product);}} className="food-add-button">
               {" "}
               + Add
             </button>
