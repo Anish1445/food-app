@@ -34,7 +34,7 @@ p{
 /* ------------------- CART ------------------- */
 .outer-cart{
     float: right;
-    margin-right: 45px;
+    margin-right: 30px;
     border-radius: 24px;
     background-color: #bdbdbd;
     display: flex;

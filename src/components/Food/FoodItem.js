@@ -11,7 +11,9 @@ function FoodItem(props) {
   const handleQuantityClick = (event) => {
     console.log("Here--> ", data);
     setFoodQuantity(event.target.value);
+    
     setQuantity(product.id, event.target.value);
+    // console.log("food-quentity",foodQuantity)
   };
 
   return (

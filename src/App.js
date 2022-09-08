@@ -12,8 +12,10 @@ function App() {
   
   const setQuantity = (id, quantity) =>{
     const myFood = products.filter(food => food.id === id)[0]
-    myFood.quantity = quantity
+    myFood.quantity = parseInt(quantity)
+    console.log("my food",myFood)
     setProducts( products.map((x) => x.id === id ? myFood : x))
+    console.log("product",products)
     }
 
 

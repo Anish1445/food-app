@@ -22,7 +22,7 @@ function StaticHeader(props) {
               <div className="cart-text" onClick={() => {setIsOpen(true);}}>
                 <ShoppingCartIcon className="icon"/>
                 <h4  >
-                  Your Cart{" "}
+                  Cart
                 </h4>
 
               </div>
