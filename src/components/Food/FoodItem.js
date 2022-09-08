@@ -16,6 +16,9 @@ function FoodItem(props) {
 
   return (
     <Card>
+      <div className="outer-div">
+        
+      
       <div className="food-details">
         <div className="food-title">
           <h5>{product.food_title}</h5>
@@ -49,10 +52,11 @@ function FoodItem(props) {
           <div>
             <button onClick={() => {onAdd(product);}} className="food-add-button">
               {" "}
-              + Add
+              +Add
             </button>
           </div>
         </div>
+      </div>
       </div>
     </Card>
   );

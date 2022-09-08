@@ -19,7 +19,7 @@ export default function CartItems(props) {
               {item.qty} x &#8377;{item.price.toFixed(2)}
             </div>
 
-            <div className="col-2">
+            <div className="col-2 button-add-sub">
               <button onClick={() => onRemove(item)} className="remove">-</button>{' '}
               <button onClick={() => onAdd(item)} className="add"> +</button>
             </div>

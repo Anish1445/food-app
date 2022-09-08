@@ -54,10 +54,12 @@ p{
     width: 35px;
 }
 .cart-text{
+    display: flex;
     color: black;
-    margin-top: -15%;
+    margin-top: -8%;
     padding-left: 12px;
     padding-right: 12px;
+    
 }
 
 
@@ -100,11 +102,26 @@ p{
 .card-wrapper::-webkit-scrollbar {
     display: none;
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .foods {
         margin-left: 2%;
         margin-right: 2%;
     }
+
+    .heading{
+        margin-top: 30px;
+        font-size:x-large;
+    }
+    /* p{
+        font-size: large;
+    } */
 }
 
+h4{
+    display: inline;
+    margin-top: 8px;
+}
 
+.icon{
+    margin-top: 5px;
+}

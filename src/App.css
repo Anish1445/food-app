@@ -2,6 +2,8 @@ body{
   background: url('https://static3.bigstockphoto.com/7/9/2/large1500/297327022.jpg');
   background-size: cover;
   width: 100%;
-  height: 98vh;
+  height: 100%; 
+  /* background-position: center; */
+  background-repeat: no-repeat;
 }
 

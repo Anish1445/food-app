@@ -40,3 +40,21 @@ button{
     font-size: large;
     padding:5px 20px;
 }
+
+@media (max-width:600px)
+{
+    button{
+        border-radius: 8px;
+        font-size: small;
+        padding:3px 8px;
+
+    }
+    .col-2{
+
+        font-size: small;
+    }
+    .button-add-sub{
+        /* font-size: small; */
+        display: flex;
+    }
+}

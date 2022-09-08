@@ -40,7 +40,6 @@ function App() {
 
   return (
     <div className="App">
-
       <StaticHeader countCartItems={cartItems.length} cartItems={cartItems} products={products} onRemove={onRemove} onAdd={onAdd}/>
       <TextContainer />
       <Food products={products} onAdd={onAdd} setQuantity={setQuantity}/>

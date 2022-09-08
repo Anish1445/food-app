@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CartItems from "../Cart/CartItems";
 import MyCartModal from "../MyCartModal/MyCartModal";
 import "./StaticHeader.css";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 function StaticHeader(props) {
   const {products} = props;
@@ -9,7 +10,7 @@ function StaticHeader(props) {
   return (
     <div className="blink-cover">
       <div className="blink2">
-        <span>
+        <span className="heading">
           <p>FOOD APP</p>
         </span>
       </div>
@@ -18,10 +19,12 @@ function StaticHeader(props) {
         <a href="#/cart">
           <div className="outer-cart">
             <div className="inner-cart">
-              <div className="cart-text">
-                <h4 onClick={() => {setIsOpen(true);}}>
+              <div className="cart-text" onClick={() => {setIsOpen(true);}}>
+                <ShoppingCartIcon className="icon"/>
+                <h4  >
                   Your Cart{" "}
                 </h4>
+
               </div>
 
               {props.countCartItems ? (
