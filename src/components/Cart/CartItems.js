@@ -13,16 +13,17 @@ export default function CartItems(props) {
 
         {cartItems.map((item) => (
           <div key={item.id} className="row section1">
-            <div className="col-2">{item.food_title}</div>
-
-            <div className="col-2 text-right">
+            <div className="col-2 section2">{item.food_title}-</div>
+            {/* <div class = "vertical"></div> */}
+            <div className="col-2 text-right section2">
               {item.qty} x &#8377;{item.price.toFixed(2)}
             </div>
-
-            <div className="col-2 button-add-sub">
+            
+            <div className="col-2 button-add-sub section2">
               <button onClick={() => onRemove(item)} className="remove">-</button>{' '}
               <button onClick={() => onAdd(item)} className="add"> +</button>
             </div>
+            {/* <div class = "vertical1"></div> */}
           </div>
         ))}
 

@@ -31,6 +31,10 @@ hr {
     background-color: #e41515;
 }
 
+.section2{
+   
+}
+
 button{
     background-color: #D82E2F;
     color: white;
@@ -41,6 +45,19 @@ button{
     padding:5px 20px;
 }
 
+.vertical {
+    border-left: 1px solid black;
+    height: 10%;
+    position:absolute;
+    left: 55%;
+}
+
+.vertical1 {
+    border-left: 1px solid black;
+    height: 10%;
+    position:absolute;
+    right: 61%;
+}
 @media (max-width:600px)
 {
     button{
