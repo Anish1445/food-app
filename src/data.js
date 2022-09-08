@@ -10,7 +10,7 @@ const data = {
     {
       id: "2",
       food_title: "Burger",
-      food_description:"Cheese Burger with french fries",
+      food_description:"Cheese Burger",
       price: 160,
       quantity: 1,
     },
